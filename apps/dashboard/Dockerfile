@@ -34,9 +34,9 @@ RUN pnpm prune --production
 EXPOSE 5000
 
 ENV NODE_ENV=production
-CMD [ "node", "build" ]
+# CMD [ "node", "build" ]
 
 # EXPOSE 5000
 
-# CMD ["pnpm", "start"]
-# CMD [ "sh", "-c", "ls -la && cd apps/dashboard && pnpm build && pnpm start" ]
+CMD ["pnpm", "start"]
+CMD [ "sh", "-c", "ls -la && cd apps/dashboard && pnpm build && pnpm start" ]
