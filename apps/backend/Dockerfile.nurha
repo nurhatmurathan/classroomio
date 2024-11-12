@@ -1,4 +1,4 @@
-FROM node:16-slim AS app  # Ensure compatible Node.js version
+FROM node:slim AS app 
 
 # Create and set the working directory
 WORKDIR /app
