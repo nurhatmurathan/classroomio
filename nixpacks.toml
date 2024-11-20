@@ -10,5 +10,5 @@ cmds = [
 [phases.build]
 cmds = ['pnpm dashboard:build']
 
-[phases.start]
+[start]
 cmd = 'pnpm dashboard:start'
