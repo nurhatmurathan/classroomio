@@ -1,7 +1,5 @@
 [phases.setup]
-# Specify the Node.js version and the pnpm version
-runtime = 'nodejs-18'
-environment = ['pnpm-8']
+nixPkgs = ['nodejs-18', 'pnpm-8_x']
 
 [phases.install]
 cmds = [
