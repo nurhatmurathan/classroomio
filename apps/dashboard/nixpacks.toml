@@ -1,19 +1,16 @@
 [phases.setup]
 # Specify the Node.js version and the pnpm version
-runtime = "nodejs-18"
-environment = ["pnpm-8_x"]
+runtime = 'nodejs-18'
+environment = ['pnpm-8']
 
 [phases.install]
-# Install Corepack and enable it, then install dependencies with pnpm
-commands = [
-  "npm install -g corepack@0.24.1 && corepack enable",
-  "pnpm i --frozen-lockfile"
+cmds = [
+  'npm install -g corepack@0.24.1 && corepack enable',
+  'pnpm i --frozen-lockfile'
 ]
 
 [phases.build]
-# Build the application using pnpm
-commands = ["pnpm dashboard:build"]
+cmds = ['pnpm dashboard:build']
 
 [phases.start]
-# Start the application
-commands = ["pnpm dashboard:start"]
+cmd = 'pnpm dashboard:start'
